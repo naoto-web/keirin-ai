@@ -39,7 +39,7 @@ const Home = {
       <div class="card sum">
         <div><div class="v num">${s.buy || 0}<span class="small muted">/${s.races || 0}R</span></div><div class="k">買い</div></div>
         <div><div class="v num">${s.hit || 0}<span class="small muted">/${s.settled || 0}</span></div><div class="k">的中</div></div>
-        <div><div class="v num">${U.num(s.ret)}</div><div class="k">回収（投資 ${U.num(s.stake)}）</div></div>
+        <div><div class="v num">${U.num(s.ret)}</div><div class="k">回収／投資 ${U.num(s.stake)}</div></div>
         <div><div class="v num">${rr == null ? '—' : U.pct(rr, 1)}</div><div class="k">回収率</div></div>
       </div>
       <div class="chips" id="vchips">
